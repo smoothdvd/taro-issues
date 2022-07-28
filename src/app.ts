@@ -11,6 +11,10 @@ class App extends Component {
 
   componentDidCatchError () {}
 
+  onLaunch() {
+    console.log('Not going to here!');
+  }
+
   // this.props.children 是将要会渲染的页面
   render () {
     return this.props.children
