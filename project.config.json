@@ -1,6 +1,6 @@
 {
-  "miniprogramRoot": "./dist",
-  "projectname": "taro-issues",
+  "miniprogramRoot": "dist/",
+  "projectname": "taro-issue",
   "description": "",
   "appid": "touristappid",
   "setting": {
@@ -9,7 +9,17 @@
     "enhance": false,
     "compileHotReLoad": false,
     "postcss": false,
-    "minified": false
+    "preloadBackgroundData": false,
+    "minified": false,
+    "newFeature": true,
+    "autoAudits": false,
+    "coverView": true,
+    "showShadowRootInWxmlPanel": false,
+    "scopeDataCheck": false,
+    "useCompilerModule": false
   },
-  "compileType": "miniprogram"
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {}
 }
