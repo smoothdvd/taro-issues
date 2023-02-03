@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import { View, Text, Button, Image } from "@tarojs/components";
+import { View, Text, Textarea, Button, Image } from "@tarojs/components";
 import { useEnv, useNavigationBar, useModal, useToast } from "taro-hooks";
 import logo from "./hook.png";
 
@@ -25,6 +25,8 @@ const Index = () => {
 
   return (
     <View className="wrapper">
+      <Textarea onInput={(e) => console.log(e.nativeEvent.detail.value)}
+      <Textarea onInput={(e) => console.log(e.detail.value)}
       <Image className="logo" src={logo} />
       <Text className="title">为Taro而设计的Hooks Library</Text>
       <Text className="desc">
